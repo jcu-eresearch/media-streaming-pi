@@ -1,15 +1,5 @@
 # Auto-media streaming via Raspberry Pi
 
-## Install
-
-```bash
-git clone https://github.com/jcu-eresearch/media-streaming-pi.git
-cd media-streaming-pi
-./install.sh
-```
-
-See how to set media sources below.
-
 ## Features
 
 * Auto-plays media streams or files via `mplayer`
@@ -21,12 +11,22 @@ See how to set media sources below.
 * Customises the desktop background
 * Prevents the display from sleeping
 
+## Install
+
+```bash
+git clone https://github.com/jcu-eresearch/media-streaming-pi.git
+cd media-streaming-pi
+./install.sh
+```
+
+See how to set media sources below.
+
 ## Usage
 
 Under the hood, this configuration uses
 [mplayer](https://mplayerhq.hu/DOCS/man/en/mplayer.1.html) and will play back
 any file, URL or source that it can on a Raspberry Pi.  We are primarily using
-this to playback media streams on RTSP but playing back file-based content
+this to playback media streams on HLS/RTSP but playing back file-based content
 should work just as well.  Mplayer's software scaling is slow so we don't
 offer scaling of video content to fit your display size; in other words, make
 your content fit your display (eg 1080p).
