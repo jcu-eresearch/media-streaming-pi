@@ -2,7 +2,7 @@
 
 ## Features
 
-* Auto-plays media streams or files via `mplayer`
+* Auto-plays media streams or files via `mplayer` on boot
 * Plays a custom text-based playlist of files or video streams or any other
   sources
 * Auto-loops on finishing playback
