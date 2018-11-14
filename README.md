@@ -21,6 +21,10 @@ cd media-streaming-pi
 
 See how to set media sources below.
 
+This has been tested with a Raspberry Pi 3 Model B Plus running Raspbian but
+should work on all models; your performance may suffer on earlier models
+depending on what videos you are playing back.
+
 ## Usage
 
 Under the hood, this configuration uses
