@@ -42,8 +42,8 @@ on network failure and for file locations, it will.
 
 ### Setting a source
 
-By default, we use a known good stream (the MARF tank camera) but it's easy to
-set your own playback source.
+By default, we use a known good stream (the Orpheus Island underwater camera)
+but it's easy to set your own playback sources.
 
 To configure which source to play back automatically, add
 mplayer-compatible locations to this text file, one source per line:
