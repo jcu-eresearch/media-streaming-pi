@@ -33,7 +33,9 @@ any file, URL or source that it can on a Raspberry Pi.  We are primarily using
 this to playback media streams on HLS/RTSP but playing back file-based content
 should work just as well.  Mplayer's software scaling is slow so we don't
 offer scaling of video content to fit your display size; in other words, make
-your content fit your display (eg 1080p).
+your content fit your display (eg 1080p) and it needs to be a format that is
+compatible with its hardware acceleration (eg
+[MMAL](https://github.com/techyian/MMALSharp/wiki/What-is-MMAL%3F)).
 
 The media stream will start playing automatically after desktop login or
 installation and will restart automatically if the media ends or dies for any
