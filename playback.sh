@@ -3,7 +3,8 @@
 mplayer \
     -fs \
     -noborder \
-    -cache 64000 \
+    -noaspect \
+    -nocache \
     -framedrop \
     -nocorrect-pts \
     -fixed-vo \
