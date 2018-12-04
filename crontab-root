@@ -1,0 +1,1 @@
+@reboot /home/eresearch/media-streaming-pi/autoreboot.sh
