@@ -6,6 +6,7 @@ Environment="DISPLAY=:0"
 Environment="XAUTHORITY=/home/pi/.Xauthority"
 ExecStart=/home/pi/media-streaming-pi/playback.sh
 Restart=always
+User=pi
 
 [Install]
 WantedBy=graphical.target
