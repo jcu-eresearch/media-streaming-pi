@@ -93,6 +93,6 @@ echo 'https://streamvdr-cns01.jcu.edu.au:1935/eResearch/UnderwaterCam.stream/pla
 
 # Set up systemd to run/restart the media stream
 sudo cp -f media-autoplay.service /etc/systemd/system/
-sudo systemctl daemon reload
+sudo systemctl daemon-reload
 sudo systemctl enable media-autoplay
 sudo systemctl start media-autoplay
