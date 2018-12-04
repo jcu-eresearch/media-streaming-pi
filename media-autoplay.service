@@ -6,6 +6,9 @@ Environment="DISPLAY=:0"
 Environment="XAUTHORITY=/home/pi/.Xauthority"
 ExecStart=/home/pi/media-streaming-pi/playback.sh
 Restart=always
+StartLimitIntervalSec=10
+StartLimitBurst=3
+StartLimitAction=reboot
 
 [Install]
 WantedBy=graphical.target
