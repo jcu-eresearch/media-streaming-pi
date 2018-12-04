@@ -4,6 +4,10 @@
 # WARNING: race condition!
 sleep 15
 
+# Improve brightness and colour on display
+xrandr --output eDP --brightness 1.15 --gamma 1:1:1.2
+
+# Play video
 mpv \
     --no-osc \
     --no-border \
