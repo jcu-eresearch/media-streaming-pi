@@ -5,8 +5,10 @@ Description = Automatically play media on GUI start
 Environment="DISPLAY=:0"
 Environment="XAUTHORITY=/home/pi/.Xauthority"
 ExecStart=/home/pi/media-streaming-pi/playback.sh
-Restart=always
 User=pi
+Restart=always
+RestartSec=5
+TimeoutSec=5
 
 [Install]
-WantedBy=graphical.target
+WantedBy=graphical.target network.target
