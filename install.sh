@@ -72,7 +72,7 @@ sudo ./install
 ln -s $PWD/mpv.conf $HOME/.config/mpv/
 
 # Install latest youtube-dl (package manager version is broken)
-sudo pip install youtube-dl
+sudo pip install -U youtube-dl
 
 # Prevent display from sleeping
 sudo tee -a /etc/xdg/lxsession/LXDE-pi/autostart > /dev/null << EOL
