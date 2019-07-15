@@ -24,3 +24,7 @@ sudo systemctl start media-autoplay
 
 # Remove automatic popup for updates; it appears over the video
 sudo apt remove -y update-manager
+
+# Install user's crontab from the file
+# Restart the stream every morning in case of overnight freeze
+crontab crontab
