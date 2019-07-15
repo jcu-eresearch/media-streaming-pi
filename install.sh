@@ -96,3 +96,7 @@ sudo cp -f media-autoplay.service /etc/systemd/system/
 sudo systemctl daemon-reload
 sudo systemctl enable media-autoplay
 sudo systemctl start media-autoplay
+
+# Install user's crontab from the file
+# Restart the stream every morning in case of overnight freeze
+crontab -u pi pi.crontab
