@@ -21,3 +21,6 @@ sudo cp -f media-autoplay.service /etc/systemd/system/
 sudo systemctl daemon-reload
 sudo systemctl enable media-autoplay
 sudo systemctl start media-autoplay
+
+# Remove automatic popup for updates; it appears over the video
+sudo apt remove -y update-manager
