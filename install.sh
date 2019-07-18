@@ -6,6 +6,10 @@ sudo apt upgrade -y
 # Set up automatic updates
 sudo apt install -y unattended-upgrades
 
+# Set up VNC
+sudo systemctl enable vncserver-x11-serviced.service && \
+    sudo systemctl start vncserver-x11-serviced.service
+
 # Compile hardware accelerated mpv
 # As at Nov 2018, mplayer and mpv in Raspbian Stretch currently lack
 # hardware acceleration for the Pi. omxplayer works, but it struggles
