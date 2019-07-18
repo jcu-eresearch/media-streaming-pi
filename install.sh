@@ -3,6 +3,9 @@
 sudo apt update
 sudo apt upgrade -y
 
+# Set up automatic updates
+sudo apt install -y unattended-upgrades
+
 # Compile hardware accelerated mpv
 # As at Nov 2018, mplayer and mpv in Raspbian Stretch currently lack
 # hardware acceleration for the Pi. omxplayer works, but it struggles
