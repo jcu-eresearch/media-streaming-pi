@@ -17,4 +17,7 @@ mpv \
     --ontop \
     --loop-playlist \
     --really-quiet \
+    --brightness 0 \
+    --contrast -10 \
+    --saturation 20 \
     --playlist /home/eresearch/.media_playlist > /dev/null 2>&1
