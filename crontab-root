@@ -1,1 +1,2 @@
 @reboot /home/eresearch/media-streaming-pi/autoreboot.sh
+0 9 * * * systemctl restart media-autoplay
