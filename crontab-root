@@ -1,2 +1,9 @@
+# Automatically set the reboot-on-power-restored flag for iMac
 @reboot /home/eresearch/media-streaming-pi/autoreboot.sh
-0 9 * * * systemctl restart media-autoplay
+# Shutdown at night
+30 18 * * * halt
+
+# Switch media stream every hour
+59 8,10,12,14,16,18 * * * echo 'https://jcu.io/video/orpheus-island-rocky-beach' > /home/eresearch/.media_playlist
+59 9,11,13,15,17 * * * echo 'https://jcu.io/video/orpheus-island-pioneer-bay' > /home/eresearch/.media_playlist
+0 * * * * systemctl restart media-autoplay
