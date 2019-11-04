@@ -84,3 +84,12 @@ get to a terminal, use Ctrl+Alt+F1 to switch to to a different TTY, login and
 then issue the relevant command and switch back to the X Server TTY with
 Ctrl+Alt+F7.  Alternatively, you can SSH in over the network and stop the
 service that way.
+
+## Backups
+
+If you want to backup the whole microSD card image, you can do the following:
+
+    hdiutil create -srcdevice /dev/rdisk2 -format ULMO media-stream-pi.dmg
+
+where `/dev/rdisk2` is the raw disk device on your macOS terminal as obtained
+from the output of the command `diskutil list`.
