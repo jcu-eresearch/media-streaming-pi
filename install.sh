@@ -28,4 +28,4 @@ sudo apt remove -y update-manager
 # Install user's crontab from the file
 # * Restart the stream every morning in case of overnight freeze
 # * Set autoreboot after power disconnected to be true (every reboot)
-crontab -u root crontab-root
+sudo crontab -u root crontab-root
